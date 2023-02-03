@@ -6,5 +6,5 @@
         console.log(a + b)
       }
 
-    btnElem.addEventListener('click', () => { sum(5, numInput.value) });
+      btnElem.addEventListener('click', () => { sum(5, +numInput.value) })
 }

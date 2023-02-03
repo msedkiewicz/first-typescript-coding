@@ -4,5 +4,5 @@
     function sum(a, b) {
         console.log(a + b);
     }
-    btnElem.addEventListener('click', function () { sum(5, numInput_1.value); });
+    btnElem.addEventListener('click', function () { sum(5, +numInput_1.value); });
 }
