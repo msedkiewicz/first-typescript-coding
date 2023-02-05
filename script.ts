@@ -1,30 +1,22 @@
-const JohnDoe:
-    {
-        name: string;
-        score: number;
-        inGame: boolean;
-    } = {
+interface Player {
+    name: string;
+    score: number | null;
+    inGame: boolean;
+}
+
+const JohnDoe: Player = {
     name: 'JohnDoeey',
     score: 25,
     inGame: true
-
 }
 
-const KatieDownson: {
-    name: string;
-    score: number;
-    inGame: boolean;
-} = {
+const KatieDownson: Player = {
     name: 'Kate98',
     score: 24,
     inGame: true
 }
 
-const ThomasBanes: {
-    name: string;
-    score: null;
-    inGame: boolean;
-} = {
+const ThomasBanes: Player = {
     name: 'Kate98',
     score: null,
     inGame: false
