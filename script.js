@@ -1,15 +1,7 @@
-var JohnDoe = {
-    name: 'JohnDoeey',
-    score: 25,
-    inGame: true
+var showData = function (data) {
+    console.log(data);
 };
-var KatieDownson = {
-    name: 'Kate98',
-    score: 24,
-    inGame: true
-};
-var ThomasBanes = {
-    name: 'Kate98',
-    score: null,
-    inGame: false
-};
+var numbers = [1, 2, 3];
+var numbersAndString = ['John', 4, 'Amanda'];
+showData(numbers);
+showData(numbersAndString);
