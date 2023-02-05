@@ -11,10 +11,13 @@
         age: 25
     }
 
-    function showParam(param: 'firstName' | 'lastName' | 'age'): string | number {
-        return per[param]
+    type paramType = 'firstName' | 'lastName' | 'age';
+    type paramReturnType = string | number;
+
+    function showParam(param: paramType): paramReturnType {
+        return per[param];
     }
 
-    let age = showParam('age')
-    let firstName = showParam('firstName')
+    let age: number = <number>showParam('age');
+    let firstName: string = <string>showParam('firstName');
 }

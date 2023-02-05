@@ -1,10 +1,12 @@
 {
-    var foo = void 0;
-    foo = 'bar';
-    foo = 12;
-    foo = false;
-    var bar = 12;
-    function baz(param) {
-        return param;
+    var per_1 = {
+        firstName: 'John',
+        lastName: 'Doe',
+        age: 25
+    };
+    function showParam(param) {
+        return per_1[param];
     }
+    var age = showParam('age');
+    var firstName = showParam('firstName');
 }
