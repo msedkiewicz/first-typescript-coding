@@ -1,12 +1,14 @@
 {
-    let foo: string | number | boolean;
+    type fooType = string | number | boolean;
+    let foo: fooType;
     foo = 'bar';
     foo = 12;
     foo = false;
 
-    const bar: number = 12;
+    const bar = 12;
 
-    function baz(param: string): string | number | boolean {
+    type bazType = string | number | boolean;
+    function baz(param: string): bazType {
         return param;
     }
 }
