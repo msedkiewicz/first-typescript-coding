@@ -1,23 +1,31 @@
-{
-    type Person = {
-        firstName: string;
-        lastName: string;
-        age: number
-    }
+const JohnDoe:
+    {
+        name: string;
+        score: number;
+        inGame: boolean;
+    } = {
+    name: 'JohnDoeey',
+    score: 25,
+    inGame: true
 
-    const per: Person = {
-        firstName: 'John',
-        lastName: 'Doe',
-        age: 25
-    }
+}
 
-    type paramType = 'firstName' | 'lastName' | 'age';
-    type paramReturnType = string | number;
+const KatieDownson: {
+    name: string;
+    score: number;
+    inGame: boolean;
+} = {
+    name: 'Kate98',
+    score: 24,
+    inGame: true
+}
 
-    function showParam(param: paramType): paramReturnType {
-        return per[param];
-    }
-
-    let age: number = <number>showParam('age');
-    let firstName: string = <string>showParam('firstName');
+const ThomasBanes: {
+    name: string;
+    score: null;
+    inGame: boolean;
+} = {
+    name: 'Kate98',
+    score: null,
+    inGame: false
 }
