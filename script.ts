@@ -1,23 +1,9 @@
-interface Player {
-    name: string;
-    score: number | null;
-    inGame: boolean;
+const showData = function (data) {
+    console.log(data)
 }
 
-const JohnDoe: Player = {
-    name: 'JohnDoeey',
-    score: 25,
-    inGame: true
-}
+const numbers = [1, 2, 3];
+const numbersAndString = ['John', 4, 'Amanda'];
 
-const KatieDownson: Player = {
-    name: 'Kate98',
-    score: 24,
-    inGame: true
-}
-
-const ThomasBanes: Player = {
-    name: 'Kate98',
-    score: null,
-    inGame: false
-}
+showData(numbers);
+showData(numbersAndString);
