@@ -1,13 +1,23 @@
 {
-    function join(valOne, valTwo) {
-        if (typeof valOne === 'number' && typeof valTwo === 'number') {
-            return valOne + valTwo;
-        }
-        else if (typeof valOne === 'string' && typeof valTwo === 'string') {
-            return valOne.toString() + valTwo.toString();
-        }
+    function showMyName(name) {
+        console.log(name);
     }
-    var one = join('John', 'Doe'); // should return JohnDoe
-    var two = join(5, 6); // should return 11
-    var three = join(5, '5'); // should return false
+    showMyName('John');
+    function square(a) {
+        return a * a;
+    }
+    square(10);
+    function sum(title) {
+        var numbers = [];
+        for (var _i = 1; _i < arguments.length; _i++) {
+            numbers[_i - 1] = arguments[_i];
+        }
+        return title + ' = ' + numbers.reduce(function (sum, num) { return sum + num; }, 0);
+    }
+    sum('Numbers', 1, 6, 10);
+    var executeFunc = function (func) {
+        var title = 'Lorem Ipsum';
+        func(title, 24, ['Sport', 'Movies']);
+    };
+    executeFunc(function (title, age, hobbies) { return true; });
 }
